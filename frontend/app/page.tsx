@@ -2,12 +2,12 @@ import type { NextPage } from "next";
 import Navbar from "./components/Navbar";
 import ProjectCard from "./components/ProjectCard";
 import React from "react";
-import { projects } from "./components/data";
+import { projects } from "./utils/data";
 
 const Home: NextPage = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="container mx-auto p-4 py-8">
         {" "}
         {/* Added padding top and bottom */}
@@ -32,11 +32,6 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <footer className="bg-gray-800 p-4 mt-8">
-        <div className="container mx-auto text-center text-gray-300">
-          &copy; {new Date().getFullYear()} Propitious Labs
-        </div>
-      </footer>
     </div>
   );
 };

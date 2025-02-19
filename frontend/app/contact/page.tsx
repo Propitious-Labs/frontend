@@ -1,6 +1,6 @@
-// pages/contact.tsx
+"use client";
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { useState } from "react";
 
 const Contact = () => {
@@ -29,7 +29,6 @@ const Contact = () => {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      <Navbar />
       <main className="container mx-auto p-4 py-8">
         <h1 className="text-4xl font-bold mb-6 text-center">Contact Us</h1>
 

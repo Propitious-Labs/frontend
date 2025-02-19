@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import Image from "next/image";
 
 const About = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      <Navbar />
       <main className="container mx-auto p-4 py-8">
         <h1 className="text-4xl font-bold mb-6 text-center">
           About Propitious Labs
@@ -44,7 +43,7 @@ const About = () => {
             {" "}
             {/* Right side: Image */}
             <Image
-              src="/images/team.jpg" // Replace with your team image or a relevant placeholder
+              src="/team.jpeg" // Replace with your team image or a relevant placeholder
               alt="Propitious Labs Team"
               width={500}
               height={300}
